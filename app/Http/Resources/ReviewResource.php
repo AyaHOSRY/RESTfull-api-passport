@@ -17,6 +17,7 @@ class ReviewResource extends Resource
       //  return parent::toArray($request);
       //if i want a specific data or i want to give another names to it incase we change the name in database
       return [
+        'id'=>$this->id,
         'customer' => $this->customer,
         'body' => $this->review,
         'star' => $this->star,
